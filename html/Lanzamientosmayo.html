@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LanzamientosMayo</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <div id="btn-menu">|||</div>
+        <a href="../index.html">TECNOTUDAI</a>
+    </header>
+
+    <nav class="navegacion" id="nav_interna">
+        <ul>
+            <li>
+                <a href="../index.html">Home</a>
+            </li>
+            <li>
+                <a href="../html/arduino.html">Arduino</a>
+            </li>
+            <li>
+                <a href="../html/ciberacoso.html">Ciberbullying</a>
+            </li>
+            <li>
+                <a href="../html/contacto.html">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="notas">
+        <article id="nota_interna">
+            <h2>Los juegos de PC con mayores requerimientos solo para los equipos más potentes
+            </h2>
+            <img src="../images/Juegos_mayo_2021.jpg" alt="">
+
+            <p>Los gráficos son una de las características más importantes a la hora de valorar un título y está claro
+                que cada vez evolucionan más y más. Hoy repasamos unos cuantos juegos que se caracterizan por ser
+                excelentes a nivel técnico.</p>
+            <p>
+                No todo el mundo tiene un buen PC, pero si es tu caso, quédate a la leer estas líneas porque te pueden
+                venir bien. Está claro que un PC de alto rendimiento es la mejor manera de disfrutar de los videojuegos
+                si lo que te apasiona son su cualidades gráficas y técnicas.
+            </p>
+            <p>
+                Cada vez más y más desarrolladoras focalizan sus esfuerzos en hacer juegos que resulten impecables a la
+                vista y para poder sacarles el mayor partido posible necesitamos un buen PC que lo soporte. A
+                continuación, vas a encontrar un lista con algunos de los juegos más exigentes. Acomódate y disfruta de
+                los 10 juegos de PC con mayores requerimientos solo para los equipos más potentes. Prepara tu tarjeta
+                gráfica.
+            </p>
+
+            <img id="publi-cel" src="../images/VW.jpg" alt="">
+
+            <p>Project Cars 2 es uno de los juegos de conducción de más calidad atesoran dentro del mercado actual. El
+                título de 2017 parece no envejecer gracias a su impecable calidad gráfica. Este título ofrece una amplia
+                selección de más de 170 coches con licencia de las marcas más icónicas del mundo del motor, y soporte
+                para realidad virtual y 12K a 60 fps.
+            </p>
+            <p>
+                The Witcher 3 no podía faltar en esta lista. El título de CD Projekt Red es uno de los más
+                representativos y queridos de esta generación por razones obvias. Pese a ser ya un veterano, el sistema
+                de iluminación de este juego revolucionó la concepción de la luz en los sandbox y nos trajo una belleza
+                difícil de superar.
+            </p>
+
+            <img src="../images/Juegos_mayo_2021_2.jpg" alt="">
+
+            <p>¿Os gustaría vivir de primera mano, la experiencia de estar en un campo de batalla? Battlefield V es lo
+                más cerca que vais a estar de hacerlo y ya decimos que, con el equipo adecuado, es como estar en los
+                grandes frentes de la Segunda Guerra Mundial en persona. La destrucción de escenarios, unas físicas
+                espectaculares y una iluminación que se ríe de la realidad son la excelente carta de presentación de
+                este título de DICE.
+            </p>
+            <p>
+                Kingdom Come Deliverance tiene horas de juego para aburrir y unos requisitos que no se pueden tomar a la
+                ligera. Este RPG de corte medieval cuenta con un motor gráfico Dunia que se basa en realidad en el motor
+                CryTek desarrollado para el famoso Crysis, otra de las joyas técnicas que han hecho historia dentro de
+                la industria.
+            </p>
+            <p>
+                DICE se vuelve a colar en esta lista con Star Wars Battlefront 2, título que nos ha mostrado el universo
+                de esta popular franquicia de la mejor manera posible. Su iluminación, texturas y explosiones están
+                cuidadas hasta el más mínimo detalle, algo que siempre es de agradecer.
+            </p>
+
+            <div class="tabla_admin">
+
+                <input id="input_juego" type="text" placeholder="Juego" required>
+                <input id="input_ram" type="number" placeholder="RAM" required>
+                <input id="input_cpu" type="text" placeholder="CPU" required>
+                <input id="input_gpu" type="text" placeholder="GPU" required>
+                
+
+
+                <div class="btn_control">
+                    <button id="btn-agregar">Agregar</button>
+                    <button id="btn-agregarTres">Triplicar</button>
+                    <button id="btn-filtrar">Filtrar por Memoria RAM</button>
+                    <select name="" id="select-procesador">
+                        <option disabled selected value>Filtrar procesador</option>
+                        <option value="intel">Intel</option>
+                        <option value="amd">AMD</option>                                         
+                        <option value="qualcomm">Qualcomm</option>                    
+                      </select>
+                      <button id="btn-actualizar">Actualizar</button>
+                </div>
+
+            </div>
+
+            <div id="div-tabla">
+                <table id="tabla">
+                    <thead>
+                        <tr>
+                            <th>Juego</th>
+                            <th>Memoria</th>
+                            <th>Procesador</th>
+                            <th>Tarjeta Grafica</th>                                                            
+                            <th>Edición</th>   
+                            <th>Eliminar</th>  
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <button id="btn-login" class="login">Login</button>
+
+            <button id="btn-logout" class="logout">LogOut</button>
+            
+
+
+            <img id="publi-cel" src="../images/publi_bedtime.png" alt="">
+
+        </article>
+
+        <div class="publicidad">
+            <img id="publi-pc" src="../images/OSDE.jpg" alt="">
+            <img id="publi-pc" src="../images/VW.jpg" alt="">
+            <img id="publi-pc" src="../images/publi_RM_4.gif" alt="">
+        </div>
+    </div>
+
+    <footer>TecnoTudai &copy 2021 - Powered by Rosende-Tobal Company S.R.L.</footer>
+
+    <script src="../js/js_tabla.js"></script>
+ 
+    <script src="../js/menucel.js"></script>
+
+</body>
+
+</html>

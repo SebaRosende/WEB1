@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+}
+footer, header{
+    background-color: rgb(59, 59, 138); 
+    padding: 2vw;  
+    text-align: center;
+}
+header{    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 12vw;    
+    letter-spacing: 0.5vw;
+}
+header a, footer, header{
+    color: white;
+}
+.navegacion{
+    background-color: rgb(131, 229, 253);
+    text-transform: uppercase;
+    display: none;
+}
+.notas{
+    padding-top: 1%;
+}
+.navegacion.show, article{
+    display: flex;    
+}
+nav ul{
+    letter-spacing: 0.2vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-inline-start: 0px;
+}
+nav ul li{
+    padding: 0.8vw 1.2vw 0.8vw 1.2vw;
+    list-style: none;
+}
+nav ul li:hover, article, .dato_cont{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+article{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3%;
+    box-shadow: 0 3px 5px 3px rgb(0 0 0 / 16%);
+}
+img{
+    width: 94%;
+    margin: 3% 0 3% 0;
+}
+h2{
+    text-align: center;
+    font-size: 7.5vw;
+    margin-bottom: 0.5%;
+}
+article h2{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+p{
+    padding: 3%;
+    text-align: justify;
+}
+#publi-cel{
+    width: 100%;
+    margin-bottom: 3%;
+}
+#btn-menu{
+    font-size: 6vw;
+    position: absolute;
+    top: 2.8%;
+    left: 4%;
+    height: 30px;
+    width: 30px;
+}
+#publi-pc{
+    display: none;
+}
+span{
+    font-weight: bold;
+}
+table, tr, th, td, thead, tbody{
+    border-style: solid;
+    text-align: center;
+}
+th, td{
+    font-size: 6.5vw;
+    text-align: left;
+    padding: 0.5vw;
+}
+#tabla{
+    width: 100%;
+}
+.tabla_admin, .logout{
+    display: none;
+}
+.tabla_admin.show , .logout.show{
+    display: block;
+}
+.ocultar{
+    display: none;
+}
+#div-tabla{
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+/* CONTACTO */
+
+#id-notas{
+    padding-top: 0;
+}
+.formulario{
+    background-color:rgb(164, 164, 194);
+}
+.formulario h2, p{
+    padding: 2vw;
+}
+label{
+    font-size: 7vw;
+    padding: 1vw;
+}
+form input, form textarea{
+    width: 90%;
+    height: 5vw;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+form textarea{
+    height: auto;
+}
+#label-novedades{
+    font-size: 5vw;
+}
+.novedades{
+    display: flex;
+    padding: 3vw;
+}
+.novedades input{
+    width: 8%;
+}
+.div_captcha{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.dato_cont{
+    font-size: 5vw;
+}
+.dato_cont ul{
+    width: 80%;
+    padding: 3%;    
+    font-weight: bold;
+    margin-left: 5%;
+}
+#btn-enviar{
+    margin-top: 3%;
+}
+#status{
+    padding: 3%;
+}
+
+@media only screen and (min-width: 480px){
+    #btn-menu{
+        top: 9%;
+        left: 5%;    
+    }
+    label, .formulario h2, p{
+        padding: 1vw;
+    }
+    label{
+        font-size: 5vw;
+    }
+    .dato_cont{
+        font-size: 4vw;
+    }
+    th, td{
+        font-size: 2vw;
+        text-align: center;
+    }
+    #tabla{
+        margin-top: 3%;
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 720px){
+    #btn-menu, #publi-cel{
+        display: none;
+    }
+    .navegacion{   
+        justify-content: center;
+        margin-bottom: 2%;
+    }
+    .navegacion, .notas, .navegacion ul{
+        display: flex;
+    }    
+    #nav_interna{
+        margin-bottom: 0;
+    }
+    header{
+        letter-spacing: 0.85vw;        
+        font-size: 6.2vw;
+    }
+    .notas, .navegacion{            
+        flex-wrap: wrap;
+    }
+    header, #nota_interna p, .formulario p, label{
+        padding: 0.5vw;
+    }
+    .notas{
+        justify-content:space-evenly;
+    }
+    h2{
+        font-size: 3vw;
+    }
+    footer{
+        padding: 1vw;
+    }
+    #nota_interna{
+        background-color: white;
+        width: 70%;
+        box-shadow: none;
+    }
+    #nota_interna p{
+        font-size: 1.25vw;
+        justify-self: left;
+    }
+    #publi-pc{
+        display: block;
+        width: 100%;
+    }
+    .publicidad{
+        width: 25%;        
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    h3{
+        font-size: 1.5em;
+    }
+    td, th, .navegacion ul li{
+        font-size: 1.5vw;
+    }
+    .formulario, .dato_cont, article{
+        width: 45%;
+    }
+    label{
+        font-size: 3vw;
+    }
+    .dato_cont, .div_captcha, #label-novedades{
+        font-size: 2vw;
+    }
+    .novedades input{
+        width: 5%;
+    }
+    form input{    
+        height: 2.2vw;
+    }
+    #id-notas{
+        padding-top: 2%;
+        margin-bottom: 3%;
+    }
+}    
